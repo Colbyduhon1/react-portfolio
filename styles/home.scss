@@ -1,3 +1,52 @@
 h1 {
   color: tomato;
 }
+.introductionContainer{
+	margin-top: 40vh;
+    width: 100vw;
+    font-size: 2em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background:black;
+}
+
+.introductionContent{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-family: Josefin Sans,sans-serif;
+}
+
+.introductionName{
+	display: -webkit-flex; 
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-family: Josefin Sans,sans-serif;
+}
+
+.icon{
+	color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+}
