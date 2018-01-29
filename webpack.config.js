@@ -5,7 +5,8 @@ module.exports = {
   devtool: 'eval',
   devServer: {
     disableHostCheck: true,
-  public: 'https://colbyportfoliosite.herokuapp.com/'
+  public: 'https://colbyportfoliosite.herokuapp.com/',
+  allowedHosts: '.herokuapp.com'
   }, // That solved it
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
