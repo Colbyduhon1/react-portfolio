@@ -9,6 +9,7 @@ module.exports = {
   ],
   devServer: {
   compress: true,
+    disableHostCheck: true,
   public: 'https://colbyportfoliosite.herokuapp.com/' // That solved it
 },
   output: {
