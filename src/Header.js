@@ -14,6 +14,7 @@ class Header extends Component {
 					</div>
 					<div className="introductionLocationLine">
 					San Francisco
+
 					</div>
 					<div className="introductionIcons">
 						<a href="https://github.com/colbyduhon1">
@@ -23,7 +24,8 @@ class Header extends Component {
 							<i className = "icon fa fa-linkedin-square"/>
 						</a>
 					</div>
-					<span></span>
+					<br></br>
+					<br></br>
 					Click to Continue
 				</div>
 			</div>

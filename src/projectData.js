@@ -1,12 +1,12 @@
 const projectData = {
 	Project1: {
-		title: "FlushThis",
+		title: "FlushThis (In Progress)",
 		background: "Built and tested via Expo and data acquired via GraphQL API",
 		tagline: "Mobile app for finding a bathroom in a hurry!",
 		background_color:"#f44248",
 		github_url:"https://github.com/Colbyduhon1/FlushThis",
 		tech_stack: ["React Native", "Expo", "GraphQL"],
-		image: "/static/Me.jpg"
+		image: '/build/flushThis3.png'
 	},
 	Project2: {
 		title: "Material Studio",
@@ -15,7 +15,7 @@ const projectData = {
 		background_color:"#004cc6",
 		github_url: "",
 		tech_stack: ["React.js", "PostgreSQL", "Redux", "Sass"],
-		image: "/static/Me.jpg"
+		image: "/build/materialStudio.png"
 	},
 	Project3: {
 		title: "Moodify",
@@ -24,7 +24,7 @@ const projectData = {
 		background_color:"#13d637",
 		github_url:"https://github.com/Colbyduhon1/MoodifyProject",
 		tech_stack: ["MongoDB", "express", "React.js", "Node.js"],
-		image: "/static/Me.jpg"
+		image: "/build/moodify.png"
 	},
 	Project4: {
 		title: "LePlonger",
@@ -33,7 +33,7 @@ const projectData = {
 		background_color:"#7208af",
 		github_url:"https://github.com/Colbyduhon1/LePlongerProject",
 		tech_stack: ["PostgreSQL", "Node.js", "React.js"],
-		image: "/static/Me.jpg"
+		image: "/build/LePlonger.png"
 	}	
 
 }

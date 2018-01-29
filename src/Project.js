@@ -15,6 +15,7 @@ export default class Project extends Component {
     return (
       <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
+        	<img src={project.image}/>
         </div>
         <div className="project-body">
           <div className="project-intro">
@@ -24,6 +25,9 @@ export default class Project extends Component {
               {techStackItems}
             </ul>
           </div>
+          <div className="desktop-screenshot-container no-mobile">
+            <img src={project.image}/> 
+          </div> 
           <ul className="project-links">
             <a href={project.github_url} target="_blank">
               <li>View project

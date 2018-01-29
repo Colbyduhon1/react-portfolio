@@ -34,7 +34,7 @@ class App extends Component {
 			   {
 			    	Object.keys(this.state.projects).map(
 			    		key => 
-			    		<Parallax.Layer style={{backgroundColor:this.state.projects[key].background_color,   display: 'flex', alignItems: 'center', justifyContent: 'center'}} offset={parseInt(key.substr(-1))} speed={1.5} onClick={() => this.refs.parallax.scrollTo(parseInt(key.substr(-1))+ 1)}>
+			    		<Parallax.Layer style={{paddingLeft:-5,   display: 'flex', alignItems: 'center', justifyContent: 'center'}} offset={parseInt(key.substr(-1))} speed={1.5} onClick={() => this.refs.parallax.scrollTo(parseInt(key.substr(-1))+ 1)}>
 			    				<Project key={key} project={this.state.projects[key]}/>
 			    		</Parallax.Layer>
 			    		)
