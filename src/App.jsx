@@ -34,11 +34,20 @@ class App extends Component {
 			   {
 			    	Object.keys(this.state.projects).map(
 			    		key => 
-			    		<Parallax.Layer style={{paddingLeft:-5,   display: 'flex', alignItems: 'center', justifyContent: 'center'}} offset={parseInt(key.substr(-1))} speed={1.5} onClick={() => this.refs.parallax.scrollTo(parseInt(key.substr(-1))+ 1)}>
+			    		<Parallax.Layer style={{background:this.state.projects[key].background_color,   display: 'flex', alignItems: 'center', justifyContent: 'center'}} offset={parseInt(key.substr(-1))} speed={1.5} onClick={() => this.refs.parallax.scrollTo(parseInt(key.substr(-1))+ 1)}>
 			    				<Project key={key} project={this.state.projects[key]}/>
 			    		</Parallax.Layer>
 			    		)
 			    }
+			    	    <Parallax.Layer
+			        // Page offset, or where the layer will be at when scrolled to
+			        // 0 means start, 1 second page, 1.5 second and half, and so on ...
+			        offset={4}
+			        // Parallax factor, allows for positive and negative values
+			        // Shifts the layer up or down in accordance to its offset
+			        speed={1}
+	                onClick={() => this.refs.parallax.scrollTo(0)}>
+			    </Parallax.Layer>
 	      	</Parallax>
 				</div>
 			    );
