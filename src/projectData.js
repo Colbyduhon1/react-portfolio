@@ -12,7 +12,7 @@ const projectData = {
 		title: "Material Studio",
 		background: "A tool for creating and saving simple websites created with Material UI components.",
 		tagline: "Web app for creating responsive websites using the Material UI framework.",
-		background_color:"#ffff00",
+		background_color:"#004cc6",
 		github_url: "",
 		tech_stack: ["React.js", "PostgreSQL", "Redux", "Sass"],
 		image: "/static/Me.jpg"
@@ -23,7 +23,7 @@ const projectData = {
 		tagline: "Entertainment tool to analyze user’s musical/literary tastes.",
 		background_color:"#13d637",
 		github_url:"https://github.com/Colbyduhon1/MoodifyProject",
-		tech_stack: ["MongoDB", "Express", "React.js", "Node.js"],
+		tech_stack: ["MongoDB", "express", "React.js", "Node.js"],
 		image: "/static/Me.jpg"
 	},
 	Project4: {
@@ -32,7 +32,7 @@ const projectData = {
 		tagline: "Website for divers to help plan a successful dive.",
 		background_color:"#7208af",
 		github_url:"https://github.com/Colbyduhon1/LePlongerProject",
-		tech_stack: ["PostgeSQL", "Node.js", "GraphQL"],
+		tech_stack: ["PostgreSQL", "Node.js", "React.js"],
 		image: "/static/Me.jpg"
 	}	
 

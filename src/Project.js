@@ -9,6 +9,9 @@ export default class Project extends Component {
 
   render() {
     const { project } = this.props;
+    const techStackItems = project.tech_stack.map((tech, index) => {
+      return <TechStackItem key={index} tech={tech}/>;
+    });
     return (
       <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
@@ -17,6 +20,9 @@ export default class Project extends Component {
           <div className="project-intro">
             <h2>{project.title}</h2>
             { project.tagline }
+             <ul className="tech-icon-container">
+              {techStackItems}
+            </ul>
           </div>
           <ul className="project-links">
             <a href={project.github_url} target="_blank">

@@ -23,6 +23,8 @@ class Header extends Component {
 							<i className = "icon fa fa-linkedin-square"/>
 						</a>
 					</div>
+					<span></span>
+					Click to Continue
 				</div>
 			</div>
 			)
