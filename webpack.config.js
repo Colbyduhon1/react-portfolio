@@ -6,7 +6,10 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
   public: 'https://colbyportfoliosite.herokuapp.com/',
-  allowedHosts: '.herokuapp.com'
+  allowedHosts: ['.herokuapp.com',
+  'colbyportfoliosite.herokuapp.com',
+  'git.heroku.com/colbyportfoliosite.git'
+  ]
   }, // That solved it
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
