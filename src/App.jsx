@@ -10,13 +10,13 @@ class App extends Component {
 	constructor(){
 		super();
 		this.state = {
-			projects: {projectData}
+			projects: projectData
 		}
 	}
 
 	render() {
 	    return (
-	    	<Parallax ref='parallax' pages={2}>
+	    	<Parallax ref='parallax' pages={5}>
 			    <Parallax.Layer
 			        // Page offset, or where the layer will be at when scrolled to
 			        // 0 means start, 1 second page, 1.5 second and half, and so on ...
@@ -27,11 +27,15 @@ class App extends Component {
 	                onClick={() => this.refs.parallax.scrollTo(1)}>
 	          		<Header />
 			    </Parallax.Layer>
+			    {
 
-			 	<Parallax.Layer offset={1} speed={1}>
-			 		<Project project={this.state.projects.projectData['Project1']}/>
-			 	}
-			 	</Parallax.Layer>
+			    	Object.keys(this.state.projects).map(
+			    		key => 
+			    		<Parallax.Layer offset={parseInt(key.substr(-1))} speed={1} onClick={() => this.refs.parallax.scrollTo(parseInt(key.substr(-1))+ 1)}>
+			    				<Project key={key} project={this.state.projects[key]}/>
+			    				</Parallax.Layer>
+			    		)
+			    }
 	      	</Parallax>
 	    );
 	 }

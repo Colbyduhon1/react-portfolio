@@ -10,7 +10,7 @@ export default class Project extends Component {
   render() {
     const { project } = this.props;
     return (
-      <div className="project-container" style={{background: project.background}}>
+      <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
         </div>
         <div className="project-body">
