@@ -33,7 +33,7 @@ const projectData = {
 		background_color:"#7208af",
 		github_url:"https://github.com/Colbyduhon1/LePlongerProject",
 		tech_stack: ["PostgreSQL", "Node.js", "React.js"],
-		image: "/build/LePlonger.png"
+		image: "/build/lePlonger.png"
 	}	
 
 }
