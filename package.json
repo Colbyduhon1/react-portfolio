@@ -34,12 +34,11 @@
     "font-awesome": "^4.7.0",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
-    "style-loader": "^0.16.1",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.4"
+    "style-loader": "^0.16.1"
   },
   "dependencies": {
     "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4",
     "babel-loader": "^7.0.0",
     "particles.js": "^2.0.0",
     "react": "^15.5.4",
