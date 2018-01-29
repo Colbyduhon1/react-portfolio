@@ -7,6 +7,10 @@ module.exports = {
     'webpack-dev-server/client?http://localhost:3000',
     './src/index.jsx'
   ],
+  devServer: {
+  compress: true,
+  public: 'https://colbyportfoliosite.herokuapp.com/' // That solved it
+},
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
