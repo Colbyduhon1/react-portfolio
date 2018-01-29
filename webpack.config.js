@@ -3,15 +3,14 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval',
+  devServer: {
+    disableHostCheck: true,
+  public: 'https://colbyportfoliosite.herokuapp.com/'
+  }, // That solved it
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     './src/index.jsx'
   ],
-  devServer: {
-  compress: true,
-    disableHostCheck: true,
-  public: 'https://colbyportfoliosite.herokuapp.com/' // That solved it
-},
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
