@@ -1,32 +1,40 @@
-import React, {Component} from 'react';
+import React, { Component, PropTypes } from 'react';
+import TechStackItem from './TechStackItem';
 
+export default class Project extends Component {
+  	constructor(props){
+  		super(props);
+  		console.log(this.props)
+  	}
 
-class Project extends Component {
-	render() {
-		return (
-			<div className="introductionContainer">
-				<div className="introductionContent">
-					<div className="introductionName">
-					Colby Duhon
-					</div>
-					<div className="introductionTagline">
-					Full Stack Web Developer
-					</div>
-					<div className="introductionLocationLine">
-					San Francisco
-					</div>
-					<div className="introductionIcons">
-						<a href="https://github.com/colbyduhon1">
-							<i className = "icon fa fa-github"/>
-						</a>
-						<a href="https://www.linkedin.com/in/colby-duhon/">
-							<i className = "icon fa fa-linkedin-square"/>
-						</a>
-					</div>
-				</div>
-			</div>
-			)
-	}
+  render() {
+    const { project } = this.props;
+    return (
+      <div className="project-container" style={{background: project.background}}>
+        <div className="desktop-screenshot-container">
+        </div>
+        <div className="project-body">
+          <div className="project-intro">
+            <h2>{project.title}</h2>
+            { project.tagline }
+          </div>
+          <ul className="project-links">
+            <a href={project.github_url} target="_blank">
+              <li>View project
+              <i className="fa fa-external-link-square"></i></li>
+            </a>
+            {project.github_url ? 
+              <a href={project.github_url} target="_blank">
+                <li>Github
+                <i className="fa fa-external-link-square"></i></li>
+              </a>
+            : null }
+          </ul>
+          <div className="project-details">
+            {project.background}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default Project;
